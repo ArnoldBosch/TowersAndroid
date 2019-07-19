@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/MainView"
+>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:srcCompat="@drawable/background" android:id="@+id/imageView2"
+            android:scaleType="fitXY" android:contentDescription="BackgroundImage" android:tag="GUI"
+    />
+    <ImageView
+            android:layout_width="140dp"
+            android:layout_height="80dp" app:srcCompat="@drawable/solvebutton" android:id="@+id/imageView3"
+            android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:tag="GUI"/>
+    <ImageView
+            android:layout_width="140dp"
+            android:layout_height="80dp" app:srcCompat="@mipmap/redobutton" android:id="@+id/btnRWD"
+            android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:tag="GUI"
+    />
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp">
+        <Button
+                android:text="-"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content" android:id="@+id/btnDown" android:layout_weight="0.3"
+                android:background="@drawable/btnminus" android:textColor="#ffffff"
+                android:textStyle="bold" android:textSize="14sp"/>
+        <EditText
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/txtDiskCount" android:layout_weight="0.4" android:gravity="center"/>
+        <Button
+                android:text="+"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content" android:id="@+id/btnUp" android:layout_weight="0.3"
+                android:background="@drawable/btnplus"
+                android:textColor="#ffffff" android:textSize="14sp"/>
+    </LinearLayout>
+</RelativeLayout>
